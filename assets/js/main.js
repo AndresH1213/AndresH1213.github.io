@@ -19,13 +19,15 @@ if(navClose){
 }
 
 /*==================== CHANGE LANGUAGE ====================*/
-const check_button = document.querySelector('.nav_check_lang')
+const check_button = document.querySelector('.form-check-input')
 function language() {
     let option = check_button.checked
-    if (option == true) {
+    if (option === true) {
         location.href = "assets/language/index-es.html"
+        console.log(option)
     } else {
         location.href = "../../index.html"
+        console.log(option)
     }
 }
 

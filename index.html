@@ -10,10 +10,12 @@
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="./assets/css/styles.css">
 
-    <title>Andres Hernandez' Portfolio </title>
+    <title>EAHB Portfolio </title>
 </head>
 
 <body>
@@ -27,7 +29,9 @@
                 <i class="uil uil-moon change-theme" id="theme-button"></i>
 
                 <span class="iconify nav_check_label" data-icon="openmoji:flag-united-states"></span>
-                <input type="checkbox" class="nav_check_lang">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                </div>
                 <span class="iconify nav_check_label" data-icon="openmoji:flag-spain"></span>
 
                 <div class="nav__toggle" id="nav-toggle">
@@ -322,13 +326,43 @@
                 <div class="portfolio__container container swiper-container">
                     <div class="swiper-wrapper">
                     <!--==================== PORTFOLIO 1 ====================-->
+                         <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/porfolio5.PNG" alt="" class="portfolio__img">
+    
+                            <div class="porfolio__data">
+                                <h3 class="portfolio__title">Administration Project</h3>
+                                <p class="portfolio__description">
+                                    Hospital, Doctors and Users administration App, with authentication, control systems
+                                    and CRUD operations.
+                                </p>
+                                <a href="https://admin-app-angular.herokuapp.com/dashboard/users" 
+                                   class="button button--flex button--small portfolio__button"
+                                   target="_BLANK">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                                <a href="https://github.com/AndresH1213/adminPro" class="button button--flex button--small portfolio__button"
+                                    target="_BLANK">
+                                    <i class="uil uil-browser"></i>
+                                    <i class="uil uil-github button__icon"></i>
+                                </a>
+                                <a href="https://github.com/AndresH1213/adminPro-backend" class="button button--flex button--small portfolio__button"
+                                    target="_BLANK">
+                                    <i class="uil uil-server-network-alt"></i>
+                                    <i class="uil uil-github button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    <!--==================== PORTFOLIO 2 ====================-->
                         <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/porftolio1.PNG" alt="" class="portfolio__img">
 
                             <div class="porfolio__data">
                                 <h3 class="portfolio__title">E-commerce website</h3>
-                                <p class="portfolio__description">E-commerce demo, where the customer
-                                    can log in and then make orders and pay.</p>
+                                <p class="portfolio__description">
+                                    E-commerce demo, authentication, CRUD of the products,
+                                    Cart, payment system and invoice.
+                                </p>
                                 <a href="https://shop-app-udemy.herokuapp.com" class="button button--flex button--small portfolio__button"
                                     target="_BLANK">
                                     Demo
@@ -341,7 +375,7 @@
                                 </a>
                             </div>
                         </div>
-                        <!--==================== PORTFOLIO 2 ====================-->
+                        <!--==================== PORTFOLIO 3 ====================-->
                         <div class="portfolio__content grid swiper-slide">
                             <!-- <img src="assets/videos/spotify_room.webm" alt="" class="portfolio__img"> -->
                             <video src="assets/videos/spotify_room.webm" class="portfolio__img" controls>
@@ -349,8 +383,9 @@
                             </video>
                             <div class="porfolio__data">
                                 <h3 class="portfolio__title">Spotify Room</h3>
-                                <p class="portfolio__description">This app allows you to create a Room where 
-                                    other users can get in, and connect it to spotify so all the users in that
+                                <p class="portfolio__description">
+                                    This app allows you to create a Room where 
+                                    other users can get in, and connect it to spotify API so all the users in that
                                     room can listen the same song in their Spotify app.
                                 </p>
                                 <!-- <a href="#" class="button button--flex button--small portfolio__button">
@@ -364,7 +399,7 @@
                                 </a>
                             </div>
                         </div>
-                        <!--==================== PORTFOLIO 3 ====================-->
+                        <!--==================== PORTFOLIO 4 ====================-->
                         <div class="portfolio__content grid swiper-slide">
                             <!-- <img src="assets/img/porfolio3.PNG" alt="" class="portfolio__img"> -->
                             <video src="assets/videos/Mapbox.webm" class="portfolio__img" controls>
@@ -372,7 +407,7 @@
                             </video>
 
                             <div class="porfolio__data">
-                                <h3 class="portfolio__title">Angular App</h3>
+                                <h3 class="portfolio__title">Maps App</h3>
                                 <p class="portfolio__description">website that allows interactions with maps and save places by putting a 
                                     marker along with title and description, it also shows a graph of the population of certain countries
                                      that can change randomly.</p>
@@ -388,7 +423,7 @@
                                 </a>
                             </div>
                         </div>
-                         <!--==================== PORTFOLIO 4 ====================-->
+                         <!--==================== PORTFOLIO 5 ====================-->
                          <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/portfolio4.PNG" alt="" class="portfolio__img">
     
@@ -409,6 +444,7 @@
                                 </a>
                             </div>
                         </div>
+                        
                     </div>
                     <!-- Add Arrows -->
                     <div class="swiper-button-next">
@@ -829,8 +865,10 @@
                             <i class="uil uil-phone contact__icon"></i>
 
                             <div>
-                                <h3 class="contact__title">WhatsApp</h3>
-                                <span class="contact__subtitle">+57 318 694 4748</span>
+                                <a href="https://api.whatsapp.com/send?phone=573186944748" target="_blank">
+                                    <h3 class="contact__title">WhatsApp</h3>
+                                    <span class="contact__subtitle">+57 318 694 4748</span>
+                                </a>
                             </div>
                         </div>
 
@@ -838,8 +876,10 @@
                             <i class="uil uil-envelope contact__icon"></i>
 
                             <div>
-                                <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle">edgar.hernandez7@correo.uis.edu.co</span>
+                                <a href="mailto:edgar.hernandez7@correo.uis.edu.co" target="_blank">
+                                    <h3 class="contact__title">Email</h3>
+                                    <span class="contact__subtitle">edgar.hernandez7@correo.uis.edu.co</span>
+                                </a>
                             </div>
                         </div>
 
@@ -935,6 +975,9 @@
 
     <!--==================== ICONIFY ====================-->
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>

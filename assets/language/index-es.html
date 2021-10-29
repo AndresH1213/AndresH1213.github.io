@@ -10,10 +10,13 @@
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="../css/swiper-bundle.min.css">
 
+     <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="../css/styles.css">
 
-    <title>Portafolio de Andrés Hernández</title>
+    <title>EAHB Portafolio</title>
 </head>
 
 <body>
@@ -27,7 +30,9 @@
                 <i class="uil uil-moon change-theme" id="theme-button"></i>
 
                 <span class="iconify nav_check_label" data-icon="openmoji:flag-united-states"></span>
-                <input type="checkbox" class="nav_check_lang" checked>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>         
+                </div>
                 <span class="iconify nav_check_label" data-icon="openmoji:flag-spain"></span>
 
                 <div class="nav__toggle" id="nav-toggle">
@@ -321,13 +326,42 @@
                 <div class="portfolio__container container swiper-container">
                     <div class="swiper-wrapper">
                     <!--==================== PORTFOLIO 1 ====================-->
+                         <div class="portfolio__content grid swiper-slide">
+                            <img src="../img/porfolio5.PNG" alt="" class="portfolio__img">
+    
+                            <div class="porfolio__data">
+                                <h3 class="portfolio__title">Proyecto de administración</h3>
+                                <p class="portfolio__description">
+                                            Aplicación de administración de Hospitales, medicos y usuarios, con sistemas
+                                            de autenticación y sistemas CRUD para el control de usuarios.
+                                </p>
+                                <a href="https://admin-app-angular.herokuapp.com/dashboard/users" 
+                                   class="button button--flex button--small portfolio__button"
+                                   target="_BLANK">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                                <a href="https://github.com/AndresH1213/adminPro" class="button button--flex button--small portfolio__button"
+                                    target="_BLANK">
+                                    <i class="uil uil-browser"></i>
+                                    <i class="uil uil-github button__icon"></i>
+                                </a>
+                                <a href="https://github.com/AndresH1213/adminPro-backend" class="button button--flex button--small portfolio__button"
+                                    target="_BLANK">
+                                    <i class="uil uil-server-network-alt"></i>
+                                    <i class="uil uil-github button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    <!--==================== PORTFOLIO 2 ====================-->
                         <div class="portfolio__content grid swiper-slide">
                             <img src="../img/porftolio1.PNG" alt="" class="portfolio__img">
 
                             <div class="porfolio__data">
                                 <h3 class="portfolio__title">E-commerce</h3>
-                                <p class="portfolio__description">Tienda virtual demo, donde el
-                                    cliente se puede registrar y despues de esto hacer pedidos y pagar.
+                                <p class="portfolio__description">
+                                    E-commerce de prueba, servicios de autenticación, CRUD de los productos,
+                                    Carrito de compras, sistema de pago y facturación.
                                 </p>
                                 <a href="https://shop-app-udemy.herokuapp.com" class="button button--flex button--small portfolio__button"
                                     target="_BLANK">
@@ -341,7 +375,7 @@
                                 </a>
                             </div>
                         </div>
-                        <!--==================== PORTFOLIO 2 ====================-->
+                        <!--==================== PORTFOLIO 3 ====================-->
                         <div class="portfolio__content grid swiper-slide">
                             <!-- <img src="../img/portfolio2.jpg" alt="" class="portfolio__img"> -->
                             <video src="../videos/spotify_room.webm" class="portfolio__img" controls>
@@ -350,7 +384,7 @@
                             <div class="porfolio__data">
                                 <h3 class="portfolio__title">Spotify Room</h3>
                                 <p class="portfolio__description">Esta aplicación permite crea una Sala donde
-                                    otros usuarios puede entrar y connectarse a Spotify para que todos los
+                                    otros usuarios puede entrar y connectarse a Spotify API para que todos los
                                     usuarios en esa sala pueda escuchar la misma canción.
                                 </p>
                                 <a href="#" class="button button--flex button--small portfolio__button">
@@ -364,7 +398,7 @@
                                 </a>
                             </div>
                         </div>
-                        <!--==================== PORTFOLIO 3 ====================-->
+                        <!--==================== PORTFOLIO 4 ====================-->
                         <div class="portfolio__content grid swiper-slide">
                             <!-- <img src="../img/porfolio3.PNG" alt="" class="portfolio__img"> -->
                             <video src="../videos/Mapbox.webm" class="portfolio__img" controls>
@@ -374,7 +408,7 @@
                                 <h3 class="portfolio__title">Angular App</h3>
                                 <p class="portfolio__description">sitio web que permite interacciones con 
                                     mapas y guardar lugares poniendo un marker junto con título y descripción,
-                                    también muestra una gráfica de la población de ciertos países que puede cambiar al azar </p>
+                                    también muestra una gráfica de la población de ciertos países que puede cambiar al azar.</p>
                                 <a href="https://mapboxproject.netlify.app/" class="button button--flex button--small portfolio__button"
                                 target="_BLANK">
                                 Visit
@@ -387,7 +421,7 @@
                                 </a>
                             </div>
                         </div>
-                        <!--==================== PORTFOLIO 4 ====================-->
+                        <!--==================== PORTFOLIO 5 ====================-->
                         <div class="portfolio__content grid swiper-slide">
                             <img src="../img/portfolio4.PNG" alt="" class="portfolio__img">
 
@@ -395,10 +429,10 @@
                                 <h3 class="portfolio__title">Aplicación Escritorio</h3>
                                 <p class="portfolio__description">Aplicación de escritorio pequeña que
                                     calcula el valor de las ordenes y las guarda en una base de datos.</p>
-                                <a href="https://www.recordjoy.com/recordjoy/embed" 
+                                <a href="https://www.recordjoy.com/view/luD1brgZDbLypegDNnHN" 
                                    class="button button--flex button--small portfolio__button"
                                    target="_BLANK">
-                                    Demo
+                                    Video
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                                 <a href="https://github.com/AndresH1213/cotizador-litografico-desktop" class="button button--flex button--small portfolio__button">
@@ -612,7 +646,7 @@
                                     </div>
                                 </div>
 
-                            </div> -->
+                            </div> 
 
                         </div>
                         <!--==================== QUALIFICATION CONTENT 2 ====================-->
@@ -826,19 +860,20 @@
                     <div>
                         <div class="contact__information">
                             <i class="uil uil-phone contact__icon"></i>
-
-                            <div>
+                            <a href="https://api.whatsapp.com/send?phone=573186944748" target="_blank">
                                 <h3 class="contact__title">WhatsApp</h3>
                                 <span class="contact__subtitle">+57 318 694 4748</span>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="contact__information">
                             <i class="uil uil-envelope contact__icon"></i>
 
                             <div>
-                                <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle">edgar.hernandez7@correo.uis.edu.co</span>
+                                <a href="mailto:edgar.hernandez7@correo.uis.edu.co" target="_blank">
+                                    <h3 class="contact__title">Email</h3>
+                                    <span class="contact__subtitle">edgar.hernandez7@correo.uis.edu.co</span>
+                                </a>
                             </div>
                         </div>
 
@@ -934,6 +969,9 @@
 
     <!--==================== ICONIFY ====================-->
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+      <!-- bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!--==================== SWIPER JS ====================-->
     <script src="../js/swiper-bundle.min.js"></script>
