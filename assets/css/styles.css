@@ -91,7 +91,7 @@ body.dark-theme {
 .change-theme {
     font-size: 1.5rem;
     color: var(--title-color);
-    margin-right: var(--mb-2-5);
+    margin-right: var(--mb-0-5);
     cursor: pointer;
 }
 
@@ -209,7 +209,7 @@ img {
 }
 
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 769px){
     .nav__menu{
         position: fixed;
         bottom: -100%;
@@ -220,7 +220,13 @@ img {
         box-shadow: 0 -1px 4px rgba(0,0,0,.15);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
-    }   
+    }
+
+    .nav__btns {
+        justify-self: start;
+        position: relative;
+        left: -55px;
+    }
 }
 
 .nav__list {
@@ -398,6 +404,97 @@ img {
     color: var(--first-color-alt);
 }
 
+/*==================== Wave effect ====================*/
+.wave-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: var(--body-color);
+    background: radial-gradient(ellipse at center, var(--body-color) 0%, var(--body-color) 35%, var(--body-color) 100%);
+    overflow: hidden;
+    z-index: -5;
+    border-radius: 5%;
+ }
+ 
+ section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 198px;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg');
+    background-size: 1600px 198px;
+ }
+ 
+ section .wave.wave1 {
+    animation: animate-wave-1 30s linear infinite;
+    z-index: -1;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+ }
+ 
+ section .wave.wave2 {
+    animation: animate-wave-2 15s linear infinite;
+    z-index: -1;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+ }
+ 
+ section .wave.wave3 {
+    animation: animate-wave-3 30s linear infinite;
+    z-index: -2;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+ }
+ 
+ section .wave.wave4 {
+    animation: animate-wave-4 5s linear infinite;
+    z-index: -3;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+ }
+ 
+ @keyframes animate-wave-1 {
+    0% {
+       background-position-x: 0;
+    }
+    100% {
+       background-position-x: 1600px;
+    }
+ }
+ 
+ @keyframes animate-wave-2 {
+    0% {
+       background-position-x: 0;
+    }
+    100% {
+       background-position-x: -1600px;
+    }
+ }
+ 
+ @keyframes animate-wave-3 {
+    0% {
+       background-position-x: 0;
+    }
+    100% {
+       background-position-x: 1600px;
+    }
+ }
+ 
+ @keyframes animate-wave-4 {
+    0% {
+       background-position-x: 0;
+    }
+    100% {
+       background-position-x: -1600px;
+    }
+ }
+
+
 /*==================== ABOUT ====================*/
 .about__img {
     width: 200px;
@@ -406,6 +503,12 @@ img {
     align-self: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     background-color: var(--first-color-second)
+}
+
+.about__data {
+    width: 90%;
+    font-weight: var(--font-semi-bold);
+    text-align: center;
 }
 
 .about__description {
@@ -975,6 +1078,8 @@ img {
 
 /* For medium devices */
 @media screen and (min-width: 568px){
+
+   
     .home__content {
         grid-template-columns: max-content 1fr 1fr;
     }
@@ -993,6 +1098,7 @@ img {
     .contact__container,
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
+        margin-left: 0;
     }
 
     .qualification__sections {
