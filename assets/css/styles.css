@@ -413,7 +413,7 @@ img {
     background: radial-gradient(ellipse at center, var(--body-color) 0%, var(--body-color) 35%, var(--body-color) 100%);
     overflow: hidden;
     z-index: -5;
-    border-radius: 5%;
+    border-radius: 2%;
  }
  
  section .wave {
@@ -859,6 +859,29 @@ img {
 .swiper-pagination-bullet {
     outline: none;
 }
+
+.container-imgs {
+    position: relative;
+}
+
+.swiper-button-imgs {
+    display: flex;
+    justify-content: center;
+}
+.swiper-img-button-prev i, 
+.swiper-img-button-next i {
+    margin: 0 3px;
+    font-size: 1.2rem;
+    color: black;
+    opacity: 50%;
+}
+
+.swiper-img-pagination {
+    display: none;
+}
+
+
+
 
 
 /*==================== PROJECT IN MIND ====================*/

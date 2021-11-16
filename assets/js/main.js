@@ -123,6 +123,22 @@ let swiper = new Swiper('.portfolio__container', {
     keyboard: true
 });
 
+let swiperImg = new Swiper('.container-imgs', {
+    cssMode: true,
+    loop: true,
+
+    navigation: {
+        nextEl: '.swiper-img-button-next',
+        prevEl: '.swiper-img-button-prev',
+    },
+    pagination: {
+        el: '.swiper-img-pagination',
+        clickable: true
+    },
+    mousewheel: true,
+    keyboard: true
+})
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
