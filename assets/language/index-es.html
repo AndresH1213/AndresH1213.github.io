@@ -90,11 +90,11 @@
                         <a href="https://www.linkedin.com/in/e-andr%C3%A9s-hern%C3%A1ndez-blanco-927384213/" target="_blank" class="home__social-icon">
                             <i class="uil uil-linkedin"></i>
                         </a>
-                        <a href="https://twitter.com/h97_andres" target="_blank" class="home__social-icon">
-                            <i class="uil uil-twitter"></i>
-                        </a>
                         <a href="https://github.com/AndresH1213" target="_blank" class="home__social-icon">
                             <i class="uil uil-github"></i>
+                        </a>
+                        <a href="https://twitter.com/h97_andres" target="_blank" class="home__social-icon">
+                            <i class="uil uil-twitter"></i>
                         </a>
                     </div>
                     <div class="home__img">
@@ -330,7 +330,7 @@
                 
                 <div class="portfolio__container container swiper-container">
                     <div class="swiper-wrapper">
-                        <!--==================== PORTFOLIO 2 ====================-->
+                        <!--==================== PORTFOLIO 1 ecommerce ====================-->
                         <div class="portfolio__content grid swiper-slide">
                             <!-- <img src="../img/porftolio1.PNG" alt="" class="portfolio__img"> -->
                             <!-- Swiper for images -->
@@ -382,17 +382,62 @@
                                 </a>
                             </div>
                         </div>
-                    <!--==================== PORTFOLIO 1 ====================-->
-                         <div class="portfolio__content grid swiper-slide">
-                            <!-- <img src="../img/porfolio5.PNG" alt="" class="portfolio__img"> -->
-                            <!-- Swiper for images -->
+                        
+                        <!--==================== PORTFOLIO 2 devsearch  ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                        <div>
+                            <div class="container-imgs swiper-container">
+                                    <div class="swiper-img-wrapper swiper-wrapper">
+                                        <img src="../img/portfolio4b.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
+                                        <img src="../img/portfolio4d.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
+                                        <img src="../img/portfolio4a.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
+                                        <img src="../img/portfolio4c.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
+                                    </div>
+                                    <div class="swiper-button-imgs">
+                                        
+                                        <div class="swiper-img-button-prev">
+                                            <i class="uil uil-arrow-circle-left swiper-portfolio-icon"></i>
+                                        </div>
+                                        
+                                        <!-- add pagination -->
+                                        <div class="swiper-img-pagination"></div>
+
+                                        <div class="swiper-img-button-next">
+                                            <i class="uil uil-arrow-circle-right swiper-portfolio-icon"></i>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="porfolio__data">
+                            <h3 class="portfolio__title">Django Red Social</h3>
+                            <p class="portfolio__description">Red social básica donde se puede encontrar proyectos de diferentes
+                                desarrolladores y su información de contacto.</p>
+                            <a href="https://devsearchapp.herokuapp.com" 
+                                class="button button--flex button--small portfolio__button"
+                                target="_BLANK">
+                                Test
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/AndresH1213/devsearch" class="button button--flex button--small portfolio__button">
+                                GitHub
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                        </div>
+            
+                         <!--==================== PORTFOLIO 3 jobapi ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <!-- <video src="assets/videos/spotify_room.webm" class="portfolio__img" controls>
+                                Your browser does not suport video tag
+                            </video> -->
                             <div>
                                 <div class="container-imgs swiper-container">
                                         <div class="swiper-img-wrapper swiper-wrapper">
-                                            <img src="../img/porfolio5a.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
-                                            <img src="../img/porfolio5b.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
-                                            <img src="../img/porfolio5c.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
-                                            <img src="../img/porfolio5d.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
+                                            <img src="../img/portfolio2c.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
+                                            <img src="../img/portfolio2b.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
+                                            <img src="../img/portfolio2a.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
+                                            <img src="../img/portfolio2.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
                                         </div>
                                         <div class="swiper-button-imgs">
                                             
@@ -411,75 +456,31 @@
                             </div>
 
                             <div class="porfolio__data">
-                                <h3 class="portfolio__title">Proyecto de administración</h3>
+                                <h3 class="portfolio__title">Jobs App</h3>
                                 <p class="portfolio__description">
-                                            Aplicación de administración de Hospitales, médicos y usuarios, con sistemas
-                                            de autenticación y sistemas CRUD para el control de usuarios.
+                                    Con esta aplicación puedes hacer un seguimiento de los trabajos a los cuales estas
+                                    aplicando. Esta es un REST API + Frontent contruida con el MEAN Stack, con autenticación
+                                    y con operaciónes de crear, leer, actualizar y eliminar los trabajos.
                                 </p>
-                                <a href="https://admin-app-angular.herokuapp.com/dashboard/users" 
-                                   class="button button--flex button--small portfolio__button"
-                                   target="_BLANK">
+                                <a href="https://serene-williams-fd1eb2.netlify.app/home" 
+                                class="button button--flex button--small portfolio__button"
+                                target="_BLANK">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
-                                <a href="https://github.com/AndresH1213/adminPro" class="button button--flex button--small portfolio__button"
+                                <a href="https://github.com/AndresH1213/JobsApiFront" class="button button--flex button--small portfolio__button"
                                     target="_BLANK">
                                     <i class="uil uil-browser"></i>
                                     <i class="uil uil-github button__icon"></i>
                                 </a>
-                                <a href="https://github.com/AndresH1213/adminPro-backend" class="button button--flex button--small portfolio__button"
+                                <a href="https://github.com/AndresH1213/JobApi" class="button button--flex button--small portfolio__button"
                                     target="_BLANK">
                                     <i class="uil uil-server-network-alt"></i>
                                     <i class="uil uil-github button__icon"></i>
                                 </a>
                             </div>
                         </div>
-                        <!--==================== PORTFOLIO 3 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <!-- <img src="../img/portfolio2.jpg" alt="" class="portfolio__img"> -->
-                            <!-- <video src="../videos/spotify_room.webm" class="portfolio__img" controls>
-                                Your browser does not suport video tag
-                            </video> -->
-                            <div>
-                                <div class="container-imgs swiper-container">
-                                        <div class="swiper-img-wrapper swiper-wrapper">
-                                            <img src="../img/porfolio2a.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
-                                            <img src="../img/porfolio2b.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
-                                            <img src="../img/porfolio2c.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
-                                        </div>
-                                        <div class="swiper-button-imgs">
-                                            
-                                            <div class="swiper-img-button-prev">
-                                                <i class="uil uil-arrow-circle-left swiper-portfolio-icon"></i>
-                                            </div>
-                                            
-                                            <!-- add pagination -->
-                                            <div class="swiper-img-pagination"></div>
 
-                                            <div class="swiper-img-button-next">
-                                                <i class="uil uil-arrow-circle-right swiper-portfolio-icon"></i>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-
-                            <div class="porfolio__data">
-                                <h3 class="portfolio__title">Spotify Room</h3>
-                                <p class="portfolio__description">Esta aplicación permite crea una Sala donde
-                                    otros usuarios puede entrar y connectarse a Spotify API para que todos los
-                                    usuarios en esa sala pueda escuchar la misma canción.
-                                </p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/AndresH1213/spotify_room_app" class="button button--flex button--small portfolio__button"
-                                target="_BLANK">
-                                GitHub
-                                <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
                         <!--==================== PORTFOLIO 4 ====================-->
                         <div class="portfolio__content grid swiper-slide">
                             <div>
@@ -526,15 +527,18 @@
                                 </a>
                             </div>
                         </div>
-                        <!--==================== PORTFOLIO 5 ====================-->
+
+                        <!--==================== PORTFOLIO 5 adminproject ====================-->
                         <div class="portfolio__content grid swiper-slide">
+                            <!-- <img src="../img/porfolio5.PNG" alt="" class="portfolio__img"> -->
+                            <!-- Swiper for images -->
                             <div>
                                 <div class="container-imgs swiper-container">
                                         <div class="swiper-img-wrapper swiper-wrapper">
-                                            <img src="../img/portfolio4b.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
-                                            <img src="../img/portfolio4d.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
-                                            <img src="../img/portfolio4a.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
-                                            <img src="../img/portfolio4c.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
+                                            <img src="../img/porfolio5a.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
+                                            <img src="../img/porfolio5b.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
+                                            <img src="../img/porfolio5c.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
+                                            <img src="../img/porfolio5d.PNG" alt="" class="portfolio__img swiper-img-slide swiper-slide">
                                         </div>
                                         <div class="swiper-button-imgs">
                                             
@@ -553,18 +557,26 @@
                             </div>
 
                             <div class="porfolio__data">
-                                <h3 class="portfolio__title">Django Red Social</h3>
-                                <p class="portfolio__description">Red social básica donde se puede encontrar proyectos de diferentes
-                                    desarrolladores y su información de contacto.</p>
-                                <a href="https://devsearchapp.herokuapp.com" 
-                                   class="button button--flex button--small portfolio__button"
-                                   target="_BLANK">
-                                    Test
+                                <h3 class="portfolio__title">Proyecto de administración</h3>
+                                <p class="portfolio__description">
+                                            Aplicación de administración de Hospitales, médicos y usuarios, con sistemas
+                                            de autenticación y sistemas CRUD para el control de usuarios.
+                                </p>
+                                <a href="https://admin-app-angular.herokuapp.com/dashboard/users" 
+                                    class="button button--flex button--small portfolio__button"
+                                    target="_BLANK">
+                                    Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
-                                <a href="https://github.com/AndresH1213/devsearch" class="button button--flex button--small portfolio__button">
-                                    GitHub
-                                    <i class="uil uil-arrow-right button__icon"></i>
+                                <a href="https://github.com/AndresH1213/adminPro" class="button button--flex button--small portfolio__button"
+                                    target="_BLANK">
+                                    <i class="uil uil-browser"></i>
+                                    <i class="uil uil-github button__icon"></i>
+                                </a>
+                                <a href="https://github.com/AndresH1213/adminPro-backend" class="button button--flex button--small portfolio__button"
+                                    target="_BLANK">
+                                    <i class="uil uil-server-network-alt"></i>
+                                    <i class="uil uil-github button__icon"></i>
                                 </a>
                             </div>
                         </div>
@@ -756,8 +768,52 @@
                                 </div>
 
                             </div>
-                            <!--==================== QUALIFICATION 9 ====================
+                            <!--==================== QUALIFICATION 8 ====================-->
                             <div class="qualification__data">
+
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-35f1bdd7-137b-4f6e-89cd-1dca33826baf.pdf">
+                                        <h3 class="qualification__title">Python Django 2021 - Complete Course</h3>
+                                        <span class="qualificacion__subtitle">Udemy</span>
+                                        <div class="qulification__calendar">
+                                            <i class="uil uil-calendar-alt"></i>
+                                            2021 - December
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <!--==================== QUALIFICATION 9 ====================-->
+                            <div class="qualification__data">
+
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-235001b5-bcac-449b-83d7-6e48fd224a69.pdf">
+                                        <h3 class="qualification__title">Angular Avanzado: MEAN</h3>
+                                        <span class="qualificacion__subtitle">Udemy</span>
+                                        <div class="qulification__calendar">
+                                            <i class="uil uil-calendar-alt"></i>
+                                            2022 - January
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <!--==================== QUALIFICATION 10 ====================-->
+                            <!-- <div class="qualification__data">
 
                                 <div></div>
 
@@ -777,7 +833,7 @@
 
                             </div> 
 
-                        </div>
+                        </div> -->
                         <!--==================== QUALIFICATION CONTENT 2 ====================-->
                         <div class="qualification__content" data-content id="work">
                             <!--==================== QUALIFICATION 1 ====================-->
