@@ -502,18 +502,27 @@ img {
     justify-self: center;
     align-self: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    background-color: var(--first-color-second)
+}
+
+.about__container {
+    row-gap: 0px;
 }
 
 .about__data {
-    width: 90%;
-    font-weight: var(--font-semi-bold);
-    text-align: center;
+    width: 100%;
+    font-weight: var(--font-medium);
+    text-align: justify;
 }
 
 .about__description {
-    text-align: center;
-    margin-bottom: var(--mb-2-5);
+
+    text-align: justify;
+}
+
+.about__description--below {
+    grid-column: 1/-1;
+    text-align: justify;
+    font-weight: var(--font-medium);
 }
 
 .about__info {
